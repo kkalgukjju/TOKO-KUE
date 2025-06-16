@@ -121,10 +121,6 @@ body {
     line-height: 1.3;
 }
 
-.hero .content h1 span {
-    color: var(--font);
-}
-
 .hero .content p {
     font-size: 1.5rem;
     margin-top: 1rem;

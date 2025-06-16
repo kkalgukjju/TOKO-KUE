@@ -14,14 +14,14 @@ document.addEventListener('click',function(e){
     }
 })
 
-//whatsapp
+// Klik Menuju Whatsapp
 function kirimWhatsApp() {
   const nama = document.getElementById("nama").value;
   const alamat = document.getElementById("alamat").value;
   const nohp = document.getElementById("nohp").value;
 
-  const pesan = `Halo Doughlight!%0ASaya ${nama}%0AAlamat: ${alamat}%0ANo HP: ${nohp}%0ASaya ingin bertanya/pesan sesuatu.`;
+  const pesan = `Halo Doughlight!%0ASaya ${nama}%0AAlamat: ${alamat}%0ANo HP: ${nohp}%0ASaya ingin pesan sesuatu.`;
 
-  const nomor = "6285694421235"; // Ganti dengan nomor WA kamu
+  const nomor = "6285694421235";
   window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
 }
