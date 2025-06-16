@@ -17,10 +17,10 @@ document.addEventListener('click',function(e){
 //whatsapp
 function kirimWhatsApp() {
   const nama = document.getElementById("nama").value;
-  const email = document.getElementById("email").value;
+  const alamat = document.getElementById("alamat").value;
   const nohp = document.getElementById("nohp").value;
 
-  const pesan = `Halo Doughlight!%0ASaya ${nama}%0AEmail: ${email}%0ANo HP: ${nohp}%0ASaya ingin bertanya/pesan sesuatu.`;
+  const pesan = `Halo Doughlight!%0ASaya ${nama}%0AAlamat: ${alamat}%0ANo HP: ${nohp}%0ASaya ingin bertanya/pesan sesuatu.`;
 
   const nomor = "6285694421235"; // Ganti dengan nomor WA kamu
   window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");

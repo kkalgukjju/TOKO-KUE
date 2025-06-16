@@ -178,7 +178,7 @@ body {
 .about .row .content p {
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
-    font-weight: 25;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -193,8 +193,8 @@ body {
     text-align: center;
     max-width: 30rem;
     margin: auto;
-    font-weight: 100;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 2rem;
 }
 
 .menu .row {
