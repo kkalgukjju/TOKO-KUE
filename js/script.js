@@ -16,9 +16,14 @@ document.addEventListener('click',function(e){
 
 // Klik Menuju Whatsapp
 function kirimWhatsApp() {
-  const nama = document.getElementById("nama").value;
-  const alamat = document.getElementById("alamat").value;
-  const nohp = document.getElementById("nohp").value;
+  const nama = document.getElementById("nama").value.trim();
+  const alamat = document.getElementById("alamat").value.trim();
+  const nohp = document.getElementById("nohp").value.trim();
+
+  if (!nama || !alamat || !nohp) {
+    alert("Harap isi semua data: Nama, Alamat, dan No HP.");
+    return;
+  }
 
   const pesan = `Halo Doughlight!%0ASaya ${nama}%0AAlamat: ${alamat}%0ANo HP: ${nohp}%0ASaya ingin pesan sesuatu.`;
 
