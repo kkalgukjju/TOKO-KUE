@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -25,7 +25,6 @@
     <!-- Navbar start -->
     <nav class="navbar">
       <a href="#" class="navbar-logo">DOUGH<span>LIGHT</span></a>
-
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
@@ -153,7 +152,7 @@
         </div>
       </div>
      </section>
-    <!-- Products Section end -->
+    <!-- Menu Section end -->
 
     <!-- Contact Seaction start -->
     <section id="contact" class="contact">
@@ -172,17 +171,17 @@
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="NAMA">
+            <input type="text" id="nama" placeholder="NAMA">
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="EMAIL">
+            <input type="text" id="email" placeholder="EMAIL">
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="NO HP">
+            <input type="text" id="nohp" placeholder="NO HP">
           </div>
-          <button type="submit" class="btn">KIRIM PESAN</button>
+          <button type="button" class="btn" onclick="kirimWhatsApp()">KIRIM PESAN</button>
         </form>
       </div>
     </section>
