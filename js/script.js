@@ -1,18 +1,18 @@
 // Toggle class active untuk hamburger menu
-const navbarNav = document.querySelector('.navbar-nav');
+const navbarNav = document.querySelector(".navbar-nav");
 
 // ketika hamburger menu di klik
-document.querySelector('#hamburger-menu').onclick = () => {
-    navbarNav.classList.toggle('active');
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
 };
 
 // Klil di luar elemen
-const hm = document.querySelector('#hamburger-menu');
-document.addEventListener('click',function(e){
-    if(!hm.contains(e.target) && !navbarNav.contains(e.target)) {
-        navbarNav.classList.remove('active');
-    }
-})
+const hm = document.querySelector("#hamburger-menu");
+document.addEventListener("click", function (e) {
+  if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
 
 // Klik Menuju Whatsapp
 function kirimWhatsApp() {
@@ -29,4 +29,13 @@ function kirimWhatsApp() {
 
   const nomor = "6285694421235";
   window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
+}
+
+// Fungsi TAB
+function showTab(tabId) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.menu-content').forEach(c => c.classList.remove('active'));
+
+  document.querySelector('.tab[onclick*="' + tabId + '"]').classList.add('active');
+  document.getElementById(tabId).classList.add('active');
 }

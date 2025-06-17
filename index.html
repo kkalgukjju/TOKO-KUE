@@ -18,6 +18,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- My Style -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -85,74 +86,113 @@
       <p>Suguhan manis yang dibuat dengan cinta</p>
       <p>Untuk momen tak terlupakan.</p>
 
-      <div class="row">
-        <div class="menu-card">
-          <div class="menu-image">
-            <img src="img/menu/Chocolate Moist Cake.jpeg" alt="Chocolate Moist Cake">
-          </div>
-          <div class="menu-content">
-            <h3>Chocolate Moist Cake</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
+      <!-- TAB -->
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('cookies')">Cookies</div>
+    <div class="tab" onclick="showTab('cakes')">Cakes</div>
+    <div class="tab" onclick="showTab('pastries')">Pastries</div>
+    <div class="tab" onclick="showTab('mochi')">Mochi</div>
+  </div>
+
+  <!-- ISI COOKIES -->
+  <div id="cookies" class="menu-content active">
+    <div class="menu-card">
+       <img src="img/menu/Choco Peanut Butter Cookies.jpg" alt="Choco Peanut Butter Cookies">
+      <h4>Choco Peanut Butter Cookies</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <div class="menu-price">RP. 79.000 <span>RP. 87.000</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-image">
-            <img src="img/menu/Danish Hazelnut.jpg" alt="Danish Hazelnut">
-          </div>
-          <div class="menu-content">
-            <h3>Danish Hazelnut</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+    <div class="menu-card">
+       <img src="img/menu/Dark Chocolate Hazelnut Crunch Cookies.jpg" alt="Dark Chocolate Hazelnut Crunch Cookies">
+      <h4>Dark Chocolate Hazelnut Crunch Cookies</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <div class="menu-price">RP. 18.000 <span>RP. 21.OOO</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-image">
-            <img src="img/menu/Lapis Legit Prunes.jpg" alt="Lapis Legit Prunes">
-          </div>
-          <div class="menu-content">
-            <h3>Lapis Legit Prunes</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+    <div class="menu-card">
+       <img src="img/menu/Hazelnut Chocolate Chip Cookies.jpg" alt="Hazelnut Chocolate Chip Cookies">
+      <h4>Hazelnut Chocolate Chip Cookies</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <div class="menu-price">RP. 245.000 <span>RP. 260.OOO</span></div>
-          </div>
-        </div>
-        <div class="menu-card">
-          <div class="menu-image">
-            <img src="img/menu/Red Velvet Cake.jpg" alt="Red Velvet Cake">
-          </div>
-          <div class="menu-content">
-            <h3>Red Velvet Cake</h3>
-            <div class="menu-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+  </div>
+
+  <!-- ISI CAKES -->
+  <div id="cakes" class="menu-content">
+    <div class="menu-card">
+      <img src="img/menu/Chocolate Moist Cake.jpeg" alt="Chocolate Moist Cake">
+      <h4>Chocolate Moist Cake</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <div class="menu-price">RP. 290.000 <span>RP. 325.000</span></div>
-          </div>
-        </div>
-        </div>
-      </div>
-     </section>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+    <div class="menu-card">
+       <img src="img/menu/Red Velvet Cake.jpg" alt="Red Velvet Cake">
+      <h4>Red Velvet Cake</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+  </div>
+
+  <!-- ISI PASTRIES -->
+  <div id="pastries" class="menu-content">
+    <div class="menu-card">
+       <img src="img/menu/Danish Hazelnut.jpg" alt="Danish Hazelnut">
+      <h4>Danish Hazelnut</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+  </div>
+
+  <!-- ISI MOCHI -->
+  <div id="mochi" class="menu-content">
+    <div class="menu-card">
+       <img src="img/menu/Mochi Kacang Merah.jpeg" alt="Mochi Kacang Merah">
+      <h4>Mochi Kacang Merah</h4>
+      <div class="menu-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+      <p class="menu-price">Rp 79.000 <span>Rp 87.000</span></p>
+    </div>
+  </div>
     <!-- Menu Section end -->
 
     <!-- Contact Seaction start -->

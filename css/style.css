@@ -24,6 +24,25 @@ body {
     color: #FFFFFF;
 }
 
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #C68642;
+  border-color: #C68642;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -193,50 +212,45 @@ body {
     line-height: 2rem;
 }
 
-.menu .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
-    gap: 1.5rem;
-    margin-top: 4rem;
+.menu-content {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
 }
 
-.menu .menu-card {
-    text-align: center;
-    border: 1px solid #666;
-    padding: 2rem;
+.menu-content.active {
+  display: flex;
 }
 
-.menu .menu-image {
-    padding: 1rem 0;
+.menu-card {
+  background: #1a1a1a;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.menu .menu-image img {
-    height: 25rem;
+.menu-card img {
+  width: 100%;
+  border-radius: 5px;
 }
 
-.menu .menu-content h3 {
-    font-size: 2rem;
+.menu-stars i {
+  color: gold;
+  margin-right: 3px;
 }
 
-.menu .menu-stars {
-    font-size: 1.7rem;
-    padding: 0.8rem;
-    color: var(--dark);
+.menu-price {
+  color: #C68642;
+  font-weight: bold;
 }
 
-.menu .menu-stars .star-full {
-    fill: var(--dark);
-}
-
-.menu .menu-price {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.menu .menu-price span {
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1rem;
+.menu-price span {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 0.9em;
 }
 
 /* Contact Section */
@@ -248,13 +262,13 @@ body {
 }
 
 .contact .row .map {
-    flex: 1 1 45rem;
+    flex: 1 1 30rem;
     width: 100%;
     object-fit: cover;
 }
 
 .contact .row form {
-    flex: 1 1 45rem;
+    flex: 1 1 30rem;
     padding: 5rem 2rem;
     text-align: center;
 }
@@ -304,11 +318,11 @@ footer .links {
 
 footer .links a {
     color: #fff;
-    padding: 0.7rem 1rem;
+    padding: 0.9rem 1rem;
 }
 
 footer .credit {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 footer .credit a {
